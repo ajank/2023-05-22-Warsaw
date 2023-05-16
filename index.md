@@ -398,6 +398,13 @@ please preview your site before committing, and make sure to run
   you will need access to software as described below.
   In addition, you will need an up-to-date web browser.
 </p>
+
+<p>
+    Please install a recent version of Python, preferably using the Anaconda installer, as well as a few required Python packages.
+    The setup instructions for <a href="https://datacarpentry.org/python-ecology-lesson/#discussion1">Anaconda installer</a> and <a href="https://datacarpentry.org/python-ecology-lesson/#required-python-packages">the required packages</a> can be found at the overview site of the <a href="https://datacarpentry.org/python-ecology-lesson/">Data Analysis and Visualization in Python for Ecologists</a> lesson.
+    If you encounter any problems, you can get help during the troubleshooting session before the workshop.
+</p>
+
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
@@ -422,15 +429,3 @@ to include the relevant installation instructions.
 These are the installation instructions for the tools used
 during the workshop.
 {% endcomment %}
-
-{% if site.carpentry == "swc" %}
-{% include swc/setup.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/setup.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/setup.html %}
-{% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
-{% endif %}
